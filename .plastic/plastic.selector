@@ -1,0 +1,4 @@
+repository "2DdashExsample@ssl://hentai_zhou@sh01-plasticscm.unity.cn:8787"
+  path "/"
+    br "/main"
+    co "/main"
