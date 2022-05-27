@@ -37,7 +37,7 @@ public class wheelDash : MonoBehaviour{
         {
             direction = Input.GetAxisRaw("Horizontal");
         }
-        if (rb2D.IsTouchingLayers(ground) && rb2D.velocity.y == 0)
+        if (rb2D.IsTouchingLayers(ground))
         {
             remainingDashNum = dashNum;
         }
@@ -58,7 +58,7 @@ public class wheelDash : MonoBehaviour{
             isDash = false;
             rb2D.gravityScale = 3;
         }
-        if (rb2D.IsTouchingLayers(ground) && rb2D.velocity.y == 0)
+        if (rb2D.IsTouchingLayers(ground))
         {
             remainingJumpNum = jumpNum;
         }
